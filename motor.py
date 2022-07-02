@@ -34,16 +34,18 @@ def motor_forward(speed):
 
 
 def motor_backward(speed):
+	pass
 
     
 def motor_left(speed):
-
+	pass
     
 def motor_right(speed):
+	pass
 
 
 def motor_stop():
-
+	pass
 
 if __name__ == '__main__':
 
