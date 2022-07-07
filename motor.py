@@ -60,9 +60,9 @@ if __name__ == '__main__':
 			motor_stop()
 			time.sleep(2)
 
-			car.motor_backward(100)
+			motor_backward(100)
 			time.sleep(2)
-			car.motor_stop()
+			motor_stop()
 			time.sleep(2)
 	except KeyboardInterrupt:
     	pass
