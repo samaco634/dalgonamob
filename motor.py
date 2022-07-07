@@ -49,22 +49,22 @@ def motor_stop():
 
 if __name__ == '__main__':
 
-	try:
-    	while True:
-			motor_forward(100)
-			time.sleep(2)
-			motor_stop()
-			time.sleep(2)
-			motor_left(100)
-			time.sleep(2)
-			motor_stop()
-			time.sleep(2)
-
-			motor_backward(100)
-			time.sleep(2)
-			motor_stop()
-			time.sleep(2)
-	except KeyboardInterrupt:
-    	pass
+    try:
+        while True:
+            motor_forward(100)
+            time.sleep(2)
+            motor_stop()
+            time.sleep(2)
+            motor_left(100)
+            time.sleep(2)
+            motor_stop()
+            time.sleep(2)
+ 
+            motor_backward(100)
+            time.sleep(2)
+            motor_stop()
+            time.sleep(2)
+    except KeyboardInterrupt:
+        pass
 
     GPIO.cleanup()
