@@ -59,8 +59,8 @@ while True:
     print(h_min,h_max,s_min,s_max,v_min,v_max)
     lower = np.array([h_min,s_min,v_min])
     upper = np.array([h_max,s_max,v_max])
-    mask = cv2.inRange(imgHSV,lower,upper)
-    imgResult = cv2.bitwise_and(img,img,mask=mask)
+    mask = img #cv2.inRange(imgHSV,lower,upper)
+    imgResult = img #cv2.bitwise_and(img,img,mask=mask)
  
  
     # cv2.imshow("Original",img)
