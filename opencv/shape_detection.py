@@ -67,13 +67,14 @@ def getContours(img):
 path = 'shapes.png'
 img = cv2.imread(path)
 imgContour = img.copy()
- 
-imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-imgBlur = cv2.GaussianBlur(imgGray,(7,7),1)
-imgCanny = cv2.Canny(imgBlur,50,50)
-getContours(imgCanny)
- 
+
 imgBlank = np.zeros_like(img)
+
+imgGray = imgBlank #cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+imgBlur = imgBlank #cv2.GaussianBlur(imgGray,(7,7),1)
+imgCanny = imgBlank #cv2.Canny(imgBlur,50,50)
+#getContours(imgCanny)
+ 
 imgStack = stackImages(0.8,([img,imgGray,imgBlur],
                             [imgCanny,imgContour,imgBlank]))
  
