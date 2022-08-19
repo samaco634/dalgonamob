@@ -3,7 +3,7 @@ import cv2
 import time
 import pygame
 
-from car_motor import CarMotor
+from motor import CarMotor
 
 import os
 
