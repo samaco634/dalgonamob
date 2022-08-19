@@ -15,9 +15,9 @@ turnSpeedSet = 35
 def img_preprocess(image):
 #    height, _, _ = image.shape
 #    image = image[int(height/2):,:,:]
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+#    image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
 #   image = cv2.resize(image, (200,66))
-    image = cv2.GaussianBlur(image,(3,3),0)
+#    image = cv2.GaussianBlur(image,(3,3),0)
     #_,image = cv2.threshold(image,160,255,cv2.THRESH_BINARY_INV)
     image = image / 255
     
