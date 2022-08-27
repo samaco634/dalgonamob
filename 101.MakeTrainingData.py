@@ -58,8 +58,8 @@ def main():
     # Start the cleaning thread
     cam_cleaner = CameraBufferCleanerThread(camera)
 
-    makedirs("./video/")
-    filepath = "./video/train"
+    makedirs("./data/")
+    filepath = "./data/train"
 
     i = 0
     carState = "stop"
