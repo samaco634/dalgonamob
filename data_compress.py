@@ -5,8 +5,8 @@ import zipfile
 
 def main():
 
-    condition =  "./data/*/*.png"
-
+#    condition =  "./data/*/*.png"
+	condition =  "./data/*.png"
     png_files = glob.glob(condition)
     print(png_files)
 
